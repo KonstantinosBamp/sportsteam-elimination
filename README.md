@@ -2,6 +2,9 @@
 Application of the Ford-Fulkerson Algorithm to solve the Sportsteam Elimination Problem
 
 ## The Max Flow Problem
+
+We use a directed graph $G = (V,E)$ to model some sort of transportation network. The edges carry some sort of *traffic* and the vertices act as *passing points* between the edges. We have a designated starting and ending point, the *sink* and *source* vertices, typically denoted by $s$ and $t$, respectively. Each edge has some capacity $u_{e}$ denoting the maximum amount of traffic it can carry. By flow, formally we mean a function that assigns to each edge a non-negative real number, $f: E \rightarrow \mathbf{R}^{+}$, while at the same time respecting the capacity constraints. We also assume that for all vertices $v  \neq s,t  \in V$, the amount of flow entering $v$ is equal to the amount of flow leaving $v$. Our goal is to push as much flow as possible from $s$ to $t$, subject to the constraints. 
+ 
 ### The Algorithm
 ## Elimination
 
